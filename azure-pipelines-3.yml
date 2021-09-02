@@ -22,6 +22,5 @@ steps:
   inputs:
     PrjName: 'COM EXTRACTION/BMSI_Comp_ComExtract64Bit_BVT/BMSI_Comp_ComExtract64Bit_BVT.ism'
     Parameters: 
-    AgentLoc: 'HostedAgent'
-    LicType: 'cls'
-    ISLicenseCLS: '6F5XTE6YRV7U'
+    AgentLoc: 'PrivateAgent'
+    SABPath: 'C:\Program Files\InstallShield\2021'
