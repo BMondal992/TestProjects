@@ -18,6 +18,12 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+
+- task: InstallShieldInstall@1
+  inputs:
+    ISVersion: '2021'
+    LicType: 'cls'
+    ISLicenseCLS: '6F5XTE6YRV7U'
 - task: InstallShieldBuild@1
   inputs:
     PrjName: 'COM EXTRACTION/BMSI_Comp_ComExtract64Bit_BVT/BMSI_Comp_ComExtract64Bit_BVT.ism'
