@@ -8,8 +8,6 @@ trigger:
 
 pool: windows-2022
 
-
-
 - task: InstallShieldInstall@1
   inputs:
     ISVersion: '2021'
