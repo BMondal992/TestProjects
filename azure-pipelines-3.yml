@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: windows-2022
+  vmImage: windows-2019
 
 steps:
 - script: echo Hello, world!
@@ -32,3 +32,8 @@ steps:
     AgentLoc: 'HostedAgent'
     LicType: 'cls'
     ISLicenseCLS: '6F5XTE6YRV7U'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    publishLocation: 'pipeline'
